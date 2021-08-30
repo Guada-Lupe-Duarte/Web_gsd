@@ -1,0 +1,12 @@
+version: "3"  
+
+services:
+
+  web:
+    #build: .
+    image: web_personal:latest
+    command: python web_personal/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
