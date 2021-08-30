@@ -1,9 +1,22 @@
 {% extends "core/base.html" %}
+{% load static %}
 
-{% block title %}
-    Contacto
-{% endblock title %}
+{% block title %} Contacto {% endblock title %}
 
-{% block content %}
-    <h2>Contacto</h2>
-{% endblock content %}
+{% block header %}
+    <h1>Contacto</h1>
+    <span class="subheading">Seguinos en nuestras redes:</span>
+{% endblock header %}
+
+{% block backgroundimage %} {% static 'core/img/ArteInfernal.jpg' %} {% endblock backgroundimage %} 
+
+{%block content %}
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+            <p>Para contactarte con Arte Infernal podés escribirnos via e-mail a: arteinfernal@arteinfernal.com</p>
+            <br>
+            <p><b>Dirección:</b> Punta Arenas 1864, C1416 FGF, Buenos Aires</p>
+            <p><b>Horario:</b> Lun a Viernes de 10 a 18 hs</p>
+            </div>
+        </div>
+{% endblock content%}

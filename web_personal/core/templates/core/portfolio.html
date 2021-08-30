@@ -1,0 +1,49 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block title %} Portafolio {% endblock title %}
+
+{% block header %}
+    <h1>Portafolio</h1>
+    <span class="subheading">Disfruta toda la discografía</span>
+{% endblock header %}
+
+{% block backgroundimage %} {% static 'core/img/123.jpg' %} {% endblock backgroundimage %} 
+
+{%block content %}
+        <!-- Proyecto Uno -->
+        <div class="row project">  	
+            <div class="col-lg-3 col-md-4 offset-lg-1">
+                <img class="img-fluid" src="{% static 'core/img/renga-esquivando-charcos.png' %}" alt="">
+            </div>
+            <div class="col-lg-7 col-md-8">
+                <h2 class="section-heading title">Esquivando charcos</h2>   
+            <p>Fecha de edición: 1991</p>
+            <p><a href="https://rock.com.ar/artistas/287/discos/616">Más información</a></p>
+            </div>
+
+        <!-- Proyecto Dos -->
+        <div class="row project">  	
+            <div class="col-lg-3 col-md-4 offset-lg-1">
+                <img class="img-fluid" src="{% static 'core/img/renga-a-donde-me-lleva-la-vida.png' %}" alt="">
+            </div>
+            <div class="col-lg-7 col-md-8">
+                <h2 class="section-heading title">A donde me lleva la vida</h2>   
+            <p>Fecha de edición: 02/11/1994</p>
+            <p><a href="https://rock.com.ar/artistas/287/discos/617">Más información</a></p>
+            </div>
+        </div>
+        </div>
+
+        <div class="row project">  	
+            <div class="col-lg-3 col-md-4 offset-lg-1">
+                <img class="img-fluid" src="{% static 'core/img/renga-bailando-en-una-pata.png' %}" alt="">
+            </div>
+            <div class="col-lg-7 col-md-8">
+                <h2 class="section-heading title">Bailando en una pata</h2>   
+            <p>Fecha de edición: 1995</p>
+            <p><a href="https://rock.com.ar/artistas/287/discos/618">Más información</a></p>
+            </div>
+        </div>
+        </div>
+{% endblock content%}

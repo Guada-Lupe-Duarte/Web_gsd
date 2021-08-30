@@ -1,9 +1,30 @@
 {% extends "core/base.html" %}
+{% load static %}
 
-{% block title %}
-    Acerca de
-{% endblock title %}
+{% block title %} Acerca de {% endblock title %}
 
-{% block content %}
-    <h2>Acerca de</h2>
-{% endblock content %}
+{% block header %}
+    <h1>Acerca de nosotros</h1>
+    <span class="subheading"> Conoce nuestra historia</span>
+{% endblock header %}
+
+{% block backgroundimage %} {% static 'core/img/73.jpeg' %} {% endblock backgroundimage %} 
+
+{%block content %}
+    <div class="row">   
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src=" {% static 'core/img/Logo-La-Renga.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">  </h2>   
+        <p>Es una banda de hard rock formada el 31 de diciembre de 1988, en el barrio porteño de Mataderos, al oeste de la ciudad de Buenos Aires.
+
+        La formación se completa desde sus inicios son:
+        Gustavo "Chizzo" Nápoli (cantante principal, guitarra principal)
+        Gabriel "Tete" Iglesias (bajo)
+        Jorge "Tanque" Iglesias (batería) 
+        <p>Mientras que Manuel "Manu" Varela se unió en 1994, gracias a Gabriel "Chiflo" Sánchez (saxo), miembro de la banda hasta 2008.
+        <p>Su carrera se basó en la autogestión, desde 2002 cuentan con una producción absolutamente independiente, manejando su propio sello, estudio y realizando la producción de sus shows.
+        </div>
+    </div>  
+{% endblock content%}

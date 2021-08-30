@@ -1,9 +1,11 @@
 {% extends "core/base.html" %}
+{% load static %}
 
-{% block title %}
-    Home
-{% endblock title %}
+{% block title %} home {% endblock title %}
 
-{% block content %}
-    <h2>Home</h2>
-{% endblock content %}
+{% block header %}
+    <h1>La Renga</h1>
+    <span class="subheading">La esquina del infinito</span>
+{% endblock header %}
+
+{% block backgroundimage %} {% static 'core/img/recital.jpg' %} {% endblock backgroundimage %} 
